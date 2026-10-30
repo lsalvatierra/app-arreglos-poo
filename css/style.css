@@ -1,0 +1,179 @@
+/* 1. Estilo global limpio y seguro para todas las páginas */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+}
+
+/* 2. Estilo exclusivo para centrar el formulario de Login en index.html */
+.login-layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 320px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.error-text {
+    color: red;
+    font-size: 14px;
+    display: block;
+    margin-top: 12px;
+    text-align: center;
+}
+
+/* --- ESTILOS DEL DASHBOARD --- */
+
+.dashboard-header {
+    background-color: #333;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-logout {
+    color: white;
+    text-decoration: none;
+    background-color: #dc3545;
+    padding: 8px 15px;
+    border-radius: 4px;
+}
+
+.btn-logout:hover {
+    background-color: #c82333;
+}
+
+.dashboard-container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Sección de Filtros */
+.filters-section {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    margin-bottom: 25px;
+}
+
+.filters-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.filter-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+.filter-group input, .filter-group select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Grilla de Polideportivos */
+.sports-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.sports-card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    border-left: 5px solid #007bff;
+}
+
+.sports-card h4 {
+    margin-top: 0;
+    color: #333;
+}
+
+.sports-card p {
+    margin: 8px 0;
+    color: #666;
+    font-size: 14px;
+}
+
+.sports-card .price {
+    font-weight: bold;
+    color: #28a745;
+    margin-top: 12px;
+}
+
+.no-results {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: #888;
+    padding: 20px;
+}
+
+.badge-tipo {
+    display: inline-block;
+    background-color: #e2e8f0;
+    color: #2d3748;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 12px;
+    margin-bottom: 8px;
+}

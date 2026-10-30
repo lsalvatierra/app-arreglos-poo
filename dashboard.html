@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel - Listado de Polideportivos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="dashboard-header">
+        <h1>Panel de Administración - Polideportivos</h1>
+        <a href="index.html" class="btn-logout">Cerrar Sesión</a>
+    </header>
+
+    <main class="dashboard-container">
+        <!-- Sección de Filtros -->
+        <section class="filters-section">
+            <h3>Filtrar Polideportivos</h3>
+            <div class="filters-grid">
+                <div class="filter-group">
+                    <label for="filtroDescripcion">Descripción (LIKE):</label>
+                    <input type="text" id="filtroDescripcion" placeholder="Ej. Municipal...">
+                </div>
+
+                <div class="filter-group">
+                    <label for="filtroDistrito">Distrito:</label>
+                    <select id="filtroDistrito">
+                        <option value="">-- Todos --</option>
+                        <option value="Lima">Lima</option>
+                        <option value="Surco">Surco</option>
+                        <option value="San Borja">San Borja</option>
+                        <option value="Miraflores">Miraflores</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="filtroPrecio">Precio Máximo (S/.):</label>
+                    <input type="number" id="filtroPrecio" placeholder="Ej. 50">
+                </div>
+            </div>
+        </section>
+
+        <!-- Grilla de Polideportivos -->
+        <section>
+            <h3>Resultados</h3>
+            <div id="gridPolideportivos" class="sports-grid">
+                <!-- Las tarjetas se inyectarán dinámicamente mediante JS -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Script principal del dashboard -->
+    <script type="module" src="js/dashboard.js"></script>
+</body>
+</html>
